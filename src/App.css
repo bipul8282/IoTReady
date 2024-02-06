@@ -1,38 +1,90 @@
-.App {
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  color: #555;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+audio {
+  width: 100%;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: #2980b9;
+}
+
+
+audio::-webkit-media-controls-panel {
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+audio::-webkit-media-controls-play-button {
+  color: #3498db;
+}
+
+audio::-webkit-media-controls-pause-button {
+  color: #e74c3c;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  color: #555;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  margin-right: 10px;
+}
+
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button {
+  color: #333;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  background-color: transparent;
+  color: #333;
+}
+
+audio::-webkit-media-controls-volume-slider-container {
+  margin-left: 10px;
+}
+
+audio::-webkit-media-controls-mute-button {
+  color: #e74c3c;
+}
+
+audio::-webkit-media-controls-fullscreen-button {
+  display: none; 
 }
